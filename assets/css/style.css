@@ -73,7 +73,7 @@ header a {
 	font-weight: 700;
 }
 
-#content {
+#feature-img-container {
 	width: 800px;
 	flex-grow: 1;
 	margin: 0 auto;
@@ -81,15 +81,6 @@ header a {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-}
-
-#feature-img-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-    width: 100%;
-    height: 100%;
 }
 
 #feature-img-container img {
@@ -155,7 +146,7 @@ header a {
 	background: rgba(0, 0, 0, 0.9);
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: none;
@@ -173,11 +164,11 @@ header a {
 }
 
 #feature-img-container img.lightbox {
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform-origin: center;
-	transform: translate(-50%, -50%) scale(1.5);
+	transform: translate(-50%, -50%) scale(0.9);
 	z-index: 100;
 	cursor: default;
 }
