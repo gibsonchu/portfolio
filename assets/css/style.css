@@ -13,6 +13,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	align-items: center;
 }
 
 header {
@@ -34,6 +35,11 @@ nav ul {
 	transition: 0.3s;
 	cursor: pointer;
 	align-items: center;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .category {
@@ -91,6 +97,7 @@ nav ul {
 	max-width: 100%;
 	max-height: 100%;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
 .img-info {
@@ -115,12 +122,64 @@ nav ul {
 	margin-bottom: 12px;
 }
 
-#feature-img-container:hover img {
+#feature-img-container:hover img:not(.lightbox) {
 	opacity: 0.5;
 }
 
 .img-date, .img-caption {
 	margin: 12px 0;
+}
+
+#carousel {
+	max-width: 800px;
+	height: 48px;
+	overflow: scroll;
+	display: flex;
+	margin: 24px 0;
+	justify-content: flex-start;
+}
+
+#carousel img {
+	position: relative;
+	height: 48px;
+	margin: 0 2px;
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+#carousel img:hover {
+	opacity: 1;
+}
+
+#lightbox-overlay {
+	background: rgba(0, 0, 0, 0.9);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	cursor: pointer;
+}
+
+#lightbox-overlay:after {
+	content: "x";
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	color: white;
+	opacity: 0.7;
+	font-size: 24px;
+}
+
+#feature-img-container img.lightbox {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform-origin: center;
+	transform: translate(-50%, -50%) scale(1.5);
+	z-index: 100;
+	cursor: default;
 }
 
 footer {
