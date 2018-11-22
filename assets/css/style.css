@@ -31,15 +31,40 @@ header h1 {
 nav ul {
 	display: flex;
 	font-size: 14px;
+	transition: 0.3s;
+	cursor: pointer;
+	align-items: center;
 }
 
-nav ul li {
+.category {
 	margin: 8px;
 	padding: 12px;
+	transition: 0.3s;
+	position: relative;
 }
 
-nav ul li ul {
+.category:hover p {
+	font-weight: 700;
+}
+
+.subcategory-container {
+	position: absolute;
+	right: 0;
+	font-size: 12px;
+	transition: 0.3s;
 	display: none;
+}
+
+.category:hover .subcategory-container {
+	display: flex
+}
+
+.subcategory {
+	margin: 6px;
+}
+
+.subcategory:hover {
+	font-weight: 700;
 }
 
 #content {
