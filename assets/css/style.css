@@ -75,6 +75,7 @@ nav ul li ul {
 	font-size: 12px;
 	align-self: flex-end;
 	justify-self: end;
+	display: none;
 }
 
 #feature-img-container .img-info *:not(.img-title) {

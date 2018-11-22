@@ -7,7 +7,10 @@ const pickFeaturedImage = () => {
 	const images = ["curt.jpg", "sunglasses.jpg", "balls.jpg", "tahoe.jpg"]; 
 	const index = Math.floor(Math.random() * Math.floor(images.length));
 	$("#feature-img-container img").attr("src", "assets/img/" + images[index]);
-	$("#feature-img-container img").load(adjustSizing);
+	$("#feature-img-container img").load(function() {
+		adjustSizing();
+		$(".img-info").fadeIn();
+	});
 }
 
 const adjustSizing = () => {
