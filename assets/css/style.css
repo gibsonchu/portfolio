@@ -130,6 +130,10 @@ header a, footer a {
 	justify-content: flex-start;
 }
 
+#carousel::-webkit-scrollbar { 
+    display: none; 
+}
+
 #carousel img {
 	position: relative;
 	height: 48px;
