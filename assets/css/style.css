@@ -6,7 +6,7 @@ body, html, h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	line-height: 1.2em;
+	line-height: 1.5em;
 }
 
 body {
@@ -37,7 +37,7 @@ nav ul {
 	align-items: center;
 }
 
-header a {
+header a, footer a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -187,5 +187,33 @@ footer li {
 
 footer li ul {
 	margin: 0 8px;
+}
+
+#about-content {
+	display: flex;
+	width: 800px;
+	flex-grow: 1;
+}
+
+#about-content .img-info {
+	position: relative;
+	display: block;
+	padding: 0;
+	width: 400px;
+}
+
+#about-content #feature-img-container {
+	width: auto;
+}
+
+#about-content #feature-img-container img {
+	width: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: default;
+}
+
+#about-content #feature-img-container:hover img {
+	opacity: 1;
 }
 
