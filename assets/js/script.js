@@ -2,16 +2,17 @@ $(document).ready(function() {
 	pickFeaturedImage();
 	$(window).resize(adjustSizing);
 	$("#feature-img-container, #lightbox-overlay").click(toggleLightboxView);
-
-	$("#carousel img").click(function() {
-		selectFeaturedImage(this);
-	})
 });
 
 const pickFeaturedImage = () => {
-	const images = ["curt.jpg", "sunglasses.jpg", "balls.jpg", "tahoe.jpg"]; 
-	const index = Math.floor(Math.random() * Math.floor(images.length));
-	$("#feature-img-container img").attr("src", "assets/img/" + images[index]);
+	if (document.getElementById("carousel")) {
+		$("#feature-img-container img").attr("src", $("#carousel img").first().attr("src"));
+	} else {
+		let images = ["assets/img/curt.jpg", "assets/img/sunglasses.jpg", "assets/img/balls.jpg", "assets/img/tahoe.jpg"]; 
+		const index = Math.floor(Math.random() * Math.floor(images.length));
+		$("#feature-img-container img").attr("src", images[index]);	
+	}
+
 	$("#feature-img-container img").load(function() {
 		adjustSizing();
 		$(".img-info").fadeIn();
@@ -34,6 +35,4 @@ const toggleLightboxView = () => {
 	}
 }
 
-const selectFeaturedImage = (image) => {
-	$("#feature-img-container img").attr("src", $(image).attr("src"));
-}
+
