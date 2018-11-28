@@ -2,6 +2,7 @@ $(document).ready(function() {
 	pickFeaturedImage();
 	$(window).resize(adjustSizing);
 	$("#feature-img-container, #lightbox-overlay").click(toggleLightboxView);
+	$("#nav-toggle").click(toggleMobileNav);
 });
 
 // TODO: Edit logic so that featured images on index.html will not necessarily be from a hard-coded array.
@@ -37,4 +38,13 @@ const toggleLightboxView = () => {
 	}
 }
 
+const toggleMobileNav = () => {
+	if ($("nav").hasClass("open")) {
+		$("#nav-toggle").html("<div class='ham'></div><div class='ham'></div><div class='ham'></div>");
+	} else {
+		$("#nav-toggle").html("X");
+	}
+	$("nav").toggleClass("open");
+	$("nav").toggleClass("close");
+}
 
