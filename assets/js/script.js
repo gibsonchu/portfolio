@@ -9,7 +9,7 @@ $(document).ready(function() {
 const pickFeaturedImage = () => {
 	if (document.getElementById("carousel")) {
 		$("#feature-img-container img").attr("src", $("#carousel img").first().attr("src"));
-	} else {
+	} else if (!document.getElementById("about-content")) {
 		let images = ["assets/img/curt.jpg", "assets/img/sunglasses.jpg", "assets/img/balls.jpg", "assets/img/tahoe.jpg"]; 
 		const index = Math.floor(Math.random() * Math.floor(images.length));
 		$("#feature-img-container img").attr("src", images[index]);	
