@@ -210,7 +210,7 @@ footer li ul {
 	width: 400px;
 }
 
-#about-content #feature-img-container {
+.about-content #feature-img-container {
 	width: auto;
 }
 
@@ -321,5 +321,22 @@ footer li ul {
 
 	.home #feature-img-container {
 		width: 90vw;
+	}
+
+	#about-content {
+		width: 80vw;
+		flex-direction: column-reverse;
+		margin-top: 60px;
+	}
+
+	#about-content .img-info {
+		display: block !important;
+		width: auto;
+	}
+
+	#about-content #feature-img-container {
+		height: 50vh;
+		width: 80vw;
+		margin: 24px auto;
 	}
 }
