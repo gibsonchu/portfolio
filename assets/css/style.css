@@ -142,7 +142,7 @@ header a, footer a {
 	transition: 0.2s;
 }
 
-#carousel img:hover {
+#carousel img:hover, #carousel .selected {
 	opacity: 1;
 }
 

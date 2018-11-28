@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$("#feature-img-container, #lightbox-overlay").click(toggleLightboxView);
 });
 
+// TODO: Edit logic so that featured images on index.html will not necessarily be from a hard-coded array.
 const pickFeaturedImage = () => {
 	if (document.getElementById("carousel")) {
 		$("#feature-img-container img").attr("src", $("#carousel img").first().attr("src"));
@@ -28,6 +29,7 @@ const toggleLightboxView = () => {
 		$("body").removeClass("lightbox");
 		$("#lightbox-overlay").fadeOut();
 		$("#feature-img-container img").removeClass("lightbox");
+		adjustSizing();
 	} else if (document.getElementById("lightbox-overlay")) {
 		$("body").addClass("lightbox");
 		$("#lightbox-overlay").fadeIn();
