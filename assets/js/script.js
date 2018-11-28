@@ -22,7 +22,9 @@ const pickFeaturedImage = () => {
 }
 
 const adjustSizing = () => {
-	$(".img-info").css("width", $("#feature-img-container img").width() - 36 + "px");
+	if (!document.getElementById("about-content")) {
+		$(".img-info").css("width", $("#feature-img-container img").width() - 36 + "px");
+	}
 }
 
 const toggleLightboxView = () => {
