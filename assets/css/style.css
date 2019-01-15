@@ -310,6 +310,10 @@ footer li ul {
 		box-sizing: border-box;
 	}
 
+	#feature-img-container img {
+		max-width: 90%;
+	}
+
 	#feature-img-container:hover img:not(.lightbox) {
 		opacity: 1;
 	}
