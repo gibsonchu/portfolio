@@ -89,7 +89,6 @@ header a, footer a {
 
 #feature-img-container img {
 	position: absolute;
-	max-width: 100%;
 	max-height: 100%;
 	transition: 0.3s;
 	cursor: pointer;
