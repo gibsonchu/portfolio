@@ -90,7 +90,7 @@ header a, footer a {
 #feature-img-container img {
 	position: absolute;
 	max-height: 100%;
-	transition: 0.3s;
+	transition: opacity 0.3s;
 	cursor: pointer;
 }
 
@@ -118,6 +118,10 @@ header a, footer a {
 
 #feature-img-container:hover img:not(.lightbox) {
 	opacity: 0.5;
+}
+
+.main#feature-img-container:hover img {
+	opacity: 1;
 }
 
 .img-date, .img-caption {
