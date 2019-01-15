@@ -54,7 +54,7 @@ header a, footer a {
 }
 
 .category:hover p {
-	font-weight: 700;
+	text-decoration: underline;
 }
 
 .subcategory-container {
@@ -74,7 +74,7 @@ header a, footer a {
 }
 
 .subcategory:hover {
-	font-weight: 700;
+	text-decoration: underline
 }
 
 #feature-img-container {
@@ -273,7 +273,7 @@ footer li ul {
 	}
 
 	nav.open .category p {
-		font-weight: 700;
+		text-decoration: underline;
 	}
 
 	nav.open .subcategory-container {
