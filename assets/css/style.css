@@ -92,16 +92,20 @@ header a, footer a {
 	max-height: 100%;
 	transition: opacity 0.3s;
 	cursor: pointer;
+	z-index: 100;
 }
 
 .img-info {
 	position: fixed;
 	padding-bottom: 24px;
+	padding-top: 10%;
 	padding-left: 24px;
 	font-size: 12px;
 	align-self: flex-end;
 	justify-self: end;
 	display: none;
+	z-index: 100;
+	cursor: pointer;
 }
 
 #feature-img-container .img-info *:not(.img-title) {
@@ -111,13 +115,9 @@ header a, footer a {
 	transition: 0.3s;
 }
 
-#feature-img-container:hover .img-info *:not(.img-title) {
-	height: auto;
-	margin-bottom: 12px;
-}
-
-#feature-img-container:hover img:not(.lightbox) {
-	opacity: 0.5;
+.img-info:hover *:not(.img-title) {
+	height: auto !important;
+	margin-bottom: 12px !important;
 }
 
 .main#feature-img-container:hover img {
@@ -126,6 +126,27 @@ header a, footer a {
 
 .img-date, .img-caption {
 	margin: 12px 0;
+}
+
+.carousel-control {
+    flex-grow: 1;
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-style: italic;
+}
+
+.carousel-control:hover {
+	opacity: 0.5;
+}
+
+.next {
+	justify-content: flex-end;
 }
 
 #carousel {
@@ -180,7 +201,7 @@ header a, footer a {
 	top: 50%;
 	transform-origin: center;
 	transform: translate(-50%, -50%) scale(0.9);
-	z-index: 100;
+	z-index: 200;
 	cursor: default;
 }
 
@@ -291,6 +312,10 @@ footer li ul {
 	    height: 4px;
 	    background-color: black;
 	    margin: 4px 0;
+	}
+
+	.carousel-control {
+		display: none;
 	}
 
 	#carousel {

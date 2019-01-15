@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	pickFeaturedImage();
 	$(window).resize(adjustSizing);
-	$("#feature-img-container, #lightbox-overlay").click(toggleLightboxView);
+	$("#feature-img-container img, .img-info, #lightbox-overlay").click(toggleLightboxView);
 	$("#nav-toggle").click(toggleMobileNav);
 });
 

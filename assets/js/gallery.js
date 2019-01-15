@@ -17,6 +17,20 @@ $(document).ready(function() {
 			viewPrevPhoto();
 		}
 	});
+
+	$(".carousel-control").click(function() {
+		if ($(this).hasClass("prev")) {
+			viewPrevPhoto();
+		} else {
+			viewNextPhoto();
+		}
+	});
+
+	$(".img-info").hover(function() {
+		$("#feature-img-container img").css("opacity", "0.5");
+	}, function() {
+		$("#feature-img-container img").css("opacity", "1");
+	})
 })
 
 const selectFeaturedImage = (index) => {
