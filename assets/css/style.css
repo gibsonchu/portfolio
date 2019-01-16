@@ -2,6 +2,17 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+.about-page-info {
+  text-decoration: none;
+  color: #0076FF;
+}
+
+.about-page-info:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 body, html, h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 	padding: 0;
@@ -74,7 +85,7 @@ header a, footer a {
 }
 
 .subcategory:hover {
-	text-decoration: underline
+	text-decoration: underline;
 }
 
 #feature-img-container {
@@ -102,8 +113,20 @@ header a, footer a {
 	opacity: 1;
 }
 
+.img-title {
+/*	margin: 12px 0;*/
+	font-size: 18px;
+/*	margin-top: 8px;*/
+    line-height: 14px;
+    margin-bottom: 12px;
+}
+
 .img-date, .img-caption {
 	margin: 12px 0;
+	font-size: 12px;
+    margin-top: 8px;
+    line-height: 14px;
+    margin-bottom: 12px;
 }
 
 .carousel-control {
@@ -205,6 +228,10 @@ footer li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+footer li ul:hover {
+	text-decoration: underline;
 }
 
 footer li ul {
