@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	pickFeaturedImage();
-	$(window).resize(adjustSizing);
-	$("#feature-img-container img, .img-info, #lightbox-overlay").click(toggleLightboxView);
+	$("#feature-img-container img, #lightbox-overlay").click(toggleLightboxView);
 	$("#nav-toggle").click(toggleMobileNav);
 });
 
@@ -14,17 +13,6 @@ const pickFeaturedImage = () => {
 		const index = Math.floor(Math.random() * Math.floor(images.length));
 		$("#feature-img-container img").attr("src", images[index]);	
 	}
-
-	$("#feature-img-container img").load(function() {
-		adjustSizing();
-		$(".img-info").fadeIn();
-	});
-}
-
-const adjustSizing = () => {
-	if (!document.getElementById("about-content")) {
-		$(".img-info").css("width", $("#feature-img-container img").width() - 36 + "px");
-	}
 }
 
 const toggleLightboxView = () => {
@@ -32,7 +20,6 @@ const toggleLightboxView = () => {
 		$("body").removeClass("lightbox");
 		$("#lightbox-overlay").fadeOut();
 		$("#feature-img-container img").removeClass("lightbox");
-		adjustSizing();
 	} else if (document.getElementById("lightbox-overlay")) {
 		$("body").addClass("lightbox");
 		$("#lightbox-overlay").fadeIn();

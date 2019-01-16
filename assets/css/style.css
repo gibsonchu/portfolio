@@ -78,7 +78,8 @@ header a, footer a {
 }
 
 #feature-img-container {
-	width: 800px;
+	width: 100%; 
+	height: 0;
 	flex-grow: 1;
 	margin: 0 auto;
 	display: flex;
@@ -88,36 +89,13 @@ header a, footer a {
 }
 
 #feature-img-container img {
-	position: absolute;
 	max-height: 100%;
+	position: relative;
 	transition: opacity 0.3s;
 	cursor: pointer;
 	z-index: 100;
-}
-
-.img-info {
-	position: fixed;
-	padding-bottom: 24px;
-	padding-top: 10%;
-	padding-left: 24px;
-	font-size: 12px;
-	align-self: flex-end;
-	justify-self: end;
-	display: none;
-	z-index: 100;
-	cursor: pointer;
-}
-
-#feature-img-container .img-info *:not(.img-title) {
-	height: 0px;
-	margin: 0;
-	overflow: hidden;
-	transition: 0.3s;
-}
-
-.img-info:hover *:not(.img-title) {
-	height: auto !important;
-	margin-bottom: 12px !important;
+	display: block;
+	object-fit: contain;
 }
 
 .main#feature-img-container:hover img {
@@ -129,24 +107,37 @@ header a, footer a {
 }
 
 .carousel-control {
-    flex-grow: 1;
     height: 50vh;
     position: relative;
     z-index: 1;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
     font-style: italic;
+    margin: 24px;
+    flex-grow: 2;
 }
 
 .carousel-control:hover {
 	opacity: 0.5;
 }
 
-.next {
-	justify-content: flex-end;
+#img-info {
+	text-align: center;
+	font-size: 12px;
+    margin-top: 8px;
+    line-height: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    margin-bottom: 12px;
 }
 
 #carousel {
@@ -154,7 +145,6 @@ header a, footer a {
 	height: 48px;
 	overflow: scroll;
 	display: flex;
-	margin: 24px 0;
 	justify-content: flex-start;
 }
 
@@ -314,7 +304,7 @@ footer li ul {
 	    margin: 4px 0;
 	}
 
-	.carousel-control {
+	.carousel-control, #img-info {
 		display: none;
 	}
 
@@ -341,10 +331,6 @@ footer li ul {
 
 	#feature-img-container:hover img:not(.lightbox) {
 		opacity: 1;
-	}
-
-	.img-info {
-		display: none !important;
 	}
 
 	body.home {

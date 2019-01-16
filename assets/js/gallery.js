@@ -25,12 +25,6 @@ $(document).ready(function() {
 			viewNextPhoto();
 		}
 	});
-
-	$(".img-info").hover(function() {
-		$("#feature-img-container img").css("opacity", "0.5");
-	}, function() {
-		$("#feature-img-container img").css("opacity", "1");
-	})
 })
 
 const selectFeaturedImage = (index) => {
@@ -38,10 +32,7 @@ const selectFeaturedImage = (index) => {
 	let image = $("#carousel img:eq(" + index + ")");
 	let info = PHOTOS_INFO[index];
 	$("#feature-img-container img").attr("src", $(image).attr("src"));
-	$("#feature-img-container .img-title").text(info.title);
-	$("#feature-img-container .img-date").text(info.date);
-	$("#feature-img-container .img-caption").text(info.caption);
-	$("#feature-img-container .img-camera").text(info.camera);
+	$("#img-info").text(info.caption);
 	$(image).addClass("selected");
 	window.localStorage.setItem("imageIndex", index);
 }
