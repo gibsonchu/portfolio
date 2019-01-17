@@ -10,7 +10,7 @@ const pickFeaturedImage = () => {
 	if (document.getElementById("carousel")) {
 		$("#feature-img-container img").attr("src", $("#carousel img").first().attr("src"));
 	} else if (!document.getElementById("about-content")) {
-		let images = ["assets/img/7J5A0477.jpg", "assets/img/7J5A0484.jpg", "assets/img/7J5A1110.jpg",
+		let images = ["assets/img/7J5A0477.jpg", "assets/img/7J5A0484.jpg", "assets/img/7J5A1110.jpg","assets/img/7J5A0755.jpg",
 		"assets/img/7J5A1122.jpg", "assets/img/7J5A1140.jpg", "assets/img/7J5A1218.jpg", "assets/img/7J5A1514.jpg",
 		"assets/img/7J5A1588.jpg", "assets/img/7J5A1654.jpg", "assets/img/7J5A1889.jpg", "assets/img/7J5A2060.jpg", 
 		"assets/img/7J5A2172.jpg", "assets/img/7J5A1697.jpg", "assets/img/7J5A2877.jpg", "assets/img/7J5A2179.jpg", 
