@@ -127,6 +127,10 @@ header a, footer a {
     margin-bottom: 12px;
 }
 
+#thanks {
+	font-size: 10px;
+}
+
 .carousel-control {
     height: 50vh;
     position: relative;
