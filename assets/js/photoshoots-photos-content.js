@@ -100,7 +100,7 @@ const PHOTOS_INFO = [
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/road-photos/26.jpg",
+		imgSrc: "assets/img/photoshoots-photos/26.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 ]
