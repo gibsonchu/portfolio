@@ -1,47 +1,34 @@
 const PHOTOS_INFO = [
 	{
-		imgSrc: "assets/img/grad/9.jpg",
+		imgSrc: "assets/img/events/1.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/2.jpg",
+		imgSrc: "assets/img/events/2.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/10.jpg",
+		imgSrc: "assets/img/events/3.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/5.jpg",
+		imgSrc: "assets/img/events/4.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/1.jpg",
+		imgSrc: "assets/img/events/5.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/6.jpg",
+		imgSrc: "assets/img/events/6.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/7.jpg",
+		imgSrc: "assets/img/events/7.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 	},
 	{
-		imgSrc: "assets/img/grad/8.jpg",
+		imgSrc: "assets/img/events/8.jpg",
 		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-	},
-	{
-		imgSrc: "assets/img/grad/4.jpg",
-		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-	},
-	{
-		imgSrc: "assets/img/grad/3.jpg",
-		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-	},
-	{
-		imgSrc: "assets/img/grad/11.jpg",
-		caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-	},
-
+	}
 ]

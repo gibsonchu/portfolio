@@ -10,14 +10,13 @@ const pickFeaturedImage = () => {
 	if (document.getElementById("carousel")) {
 		$("#feature-img-container img").attr("src", $("#carousel img").first().attr("src"));
 	} else if (!document.getElementById("about-content")) {
-		let images = ["assets/img/7J5A0477.jpg", "assets/img/7J5A0484.jpg", "assets/img/7J5A1110.jpg","assets/img/7J5A0755.jpg",
-		"assets/img/7J5A1122.jpg", "assets/img/7J5A1140.jpg", "assets/img/7J5A1218.jpg", "assets/img/7J5A1514.jpg",
-		"assets/img/7J5A1588.jpg", "assets/img/7J5A1654.jpg", "assets/img/7J5A1889.jpg", "assets/img/7J5A2060.jpg", 
-		"assets/img/7J5A2172.jpg", "assets/img/7J5A1697.jpg", "assets/img/7J5A2877.jpg", "assets/img/7J5A2179.jpg", 
-		"assets/img/7J5A2758.jpg", "assets/img/7J5A2778.jpg", "assets/img/7J5A2780.jpg", "assets/img/7J5A2856.jpg", 
-		"assets/img/7J5A2947.jpg", "assets/img/7J5A2679.jpg", "assets/img/7J5A9463.jpg", "assets/img/DSCF7723.jpg", 
-		"assets/img/DSCF7944.jpg", "assets/img/DSCF8016.jpg", "assets/img/GIB_2457.jpg", "assets/img/GIBS2577.jpg", 
-		"assets/img/GIBS2604.jpg", "assets/img/GIBS2709.jpg", "assets/img/IMG_6242.jpg", "assets/img/GIB_2381.jpg"]; 
+		let images = ["assets/img/index/1.jpg","assets/img/index/2.jpg","assets/img/index/3.jpg",
+		"assets/img/index/4.jpg","assets/img/index/5.jpg","assets/img/index/6.jpg",
+		"assets/img/index/7.jpg","assets/img/index/8.jpg","assets/img/index/9.jpg",
+		"assets/img/index/10.jpg","assets/img/index/11.jpg","assets/img/index/12.jpg",
+		"assets/img/index/13.jpg","assets/img/index/14.jpg","assets/img/index/15.jpg",
+		"assets/img/index/16.jpg","assets/img/index/17.jpg","assets/img/index/18.jpg",
+		"assets/img/index/19.jpg","assets/img/index/20.jpg",]; 
 		const index = Math.floor(Math.random() * Math.floor(images.length));
 		$("#feature-img-container img").attr("src", images[index]);	
 	}
