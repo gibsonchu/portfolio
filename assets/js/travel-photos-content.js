@@ -5,7 +5,7 @@ const PHOTOS_INFO = [
 	},
 	{
 		imgSrc: "assets/img/travel/2.jpg",
-		caption: "7.15.18 \u2022 FILL IN SOON",
+		caption: "7.15.18 \u2022 Memorial Park",
 	},
 	{
 		imgSrc: "assets/img/travel/3.jpg",
