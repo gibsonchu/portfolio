@@ -153,6 +153,7 @@ header a, footer a {
     font-style: italic;
     margin: 24px;
     flex-grow: 2;
+    flex-basis: 0;
 }
 
 .carousel-control:hover {
