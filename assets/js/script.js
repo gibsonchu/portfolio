@@ -16,7 +16,14 @@ const pickFeaturedImage = () => {
 		"assets/img/index/10.jpg","assets/img/index/11.jpg","assets/img/index/12.jpg",
 		"assets/img/index/13.jpg","assets/img/index/14.jpg","assets/img/index/15.jpg",
 		"assets/img/index/16.jpg","assets/img/index/17.jpg","assets/img/index/18.jpg",
-		"assets/img/index/19.jpg","assets/img/index/20.jpg",]; 
+		"assets/img/index/19.jpg","assets/img/index/20.jpg","assets/img/index/21.jpg",
+		"assets/img/index/22.jpg","assets/img/index/23.jpg","assets/img/index/24.jpg",
+		"assets/img/index/25.jpg","assets/img/index/26.jpg","assets/img/index/27.jpg",
+		"assets/img/index/28.jpg","assets/img/index/29.jpg","assets/img/index/30.jpg",
+		"assets/img/index/31.jpg","assets/img/index/32.jpg","assets/img/index/33.jpg",
+		"assets/img/index/34.jpg","assets/img/index/35.jpg","assets/img/index/36.jpg",
+		"assets/img/index/37.jpg","assets/img/index/38.jpg","assets/img/index/39.jpg",
+		"assets/img/index/40.jpg"]; 
 		const index = Math.floor(Math.random() * Math.floor(images.length));
 		$("#feature-img-container img").attr("src", images[index]);	
 	}
